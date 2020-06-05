@@ -48,6 +48,12 @@ export declare class Bear extends React.Component<Props> {
     private path1;
     render(): JSX.Element;
 }
+export declare class OnePlus extends React.Component<Props> {
+    static optionValue: string;
+    private mask1;
+    private path1;
+    render(): JSX.Element;
+}
 export default class Graphics extends React.Component<Props> {
     render(): JSX.Element;
 }

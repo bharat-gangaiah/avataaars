@@ -1,11 +1,8 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    }
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -53,7 +50,7 @@ var Colors = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Colors.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { option: options_1.ClotheColorOption, defaultOption: Gray01 },
+        return (React.createElement(options_1.Selector, { option: options_1.ClotheColorOption, defaultOption: White },
             React.createElement(Black, { maskID: this.props.maskID }),
             React.createElement(Blue01, { maskID: this.props.maskID }),
             React.createElement(Blue02, { maskID: this.props.maskID }),

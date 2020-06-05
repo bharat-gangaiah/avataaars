@@ -45,7 +45,7 @@ const White = makeColor('White', '#FFFFFF')
 export default class Colors extends React.Component<Props> {
   render () {
     return (
-      <Selector option={ClotheColorOption} defaultOption={Gray01}>
+      <Selector option={ClotheColorOption} defaultOption={White}>
         <Black maskID={this.props.maskID} />
         <Blue01 maskID={this.props.maskID} />
         <Blue02 maskID={this.props.maskID} />

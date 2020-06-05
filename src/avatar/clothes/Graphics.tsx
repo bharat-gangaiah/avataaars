@@ -376,21 +376,48 @@ export class Bear extends React.Component<Props> {
   }
 }
 
+export class OnePlus extends React.Component<Props> {
+  static optionValue = 'OnePlus'
+  private mask1 = uniqueId('react-mask-')
+  private path1 = uniqueId('react-path-')
+
+  render () {
+    const { mask1, path1 } = this
+    return (
+      <g
+        id='Clothing/Graphic/OnePlus'
+        mask={`url(#${this.props.maskID})`}
+        strokeWidth='1'
+        fillRule='evenodd'>
+        <defs>
+          <polygon
+            id={path1}
+            points='47.8916289 0.430054064 47.8916289 41.9204613 0.45345556 41.9204613 0.45345556 0.430054064 47.8916289 0.430054064'
+          />
+        </defs>
+        <g transform='translate(81.000000, 58.000000)' id='Group-77'>
+          <g transform='translate(31.000000, 1.000000)'>
+            <mask id={mask1} fill='white'>
+              <use xlinkHref={'#' + path1} />
+            </mask>
+            <path
+              d='M 12.738281 32.910156 L 12.738281 29.261719 L 16.386719 29.261719 L 16.386719 18.316406 L 12.738281 18.316406 L 12.738281 14.597656 L 20.035156 14.597656 L 20.035156 29.195312 L 23.753906 29.195312 L 23.753906 32.84375 L 12.738281 32.84375 Z M 36.492188 42 L 36.492188 18.246094 L 32.84375 18.246094 L 32.84375 38.351562 L 3.648438 38.351562 L 3.648438 9.15625 L 23.753906 9.15625 L 23.753906 5.507812 L 0 5.507812 L 0 42 Z M 36.492188 14.597656 L 36.492188 9.089844 L 42 9.089844 L 42 5.507812 L 36.492188 5.507812 L 36.492188 0 L 32.84375 0 L 32.84375 5.507812 L 27.335938 5.507812 L 27.335938 9.15625 L 32.84375 9.15625 L 32.84375 14.664062 L 36.492188 14.664062 Z M 36.492188 14.597656 '
+              id='Fill-77'
+              fill='#eb0028'
+              mask={`url(#${mask1})`}
+            />
+          </g>
+        </g>
+      </g>
+    )
+  }
+}
+
 export default class Graphics extends React.Component<Props> {
   render () {
     return (
-      <Selector option={GraphicOption} defaultOption={Skull}>
-        <Bat maskID={this.props.maskID} />
-        <Cumbia maskID={this.props.maskID} />
-        <Deer maskID={this.props.maskID} />
-        <Diamond maskID={this.props.maskID} />
-        <Hola maskID={this.props.maskID} />
-        <Pizza maskID={this.props.maskID} />
-        <Resist maskID={this.props.maskID} />
-        <Selena maskID={this.props.maskID} />
-        <Bear maskID={this.props.maskID} />
-        <SkullOutline maskID={this.props.maskID} />
-        <Skull maskID={this.props.maskID} />
+      <Selector option={GraphicOption} defaultOption={OnePlus}>
+        <OnePlus maskID={this.props.maskID} />
       </Selector>
     )
   }
