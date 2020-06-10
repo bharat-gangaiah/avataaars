@@ -19,7 +19,7 @@ export interface Props {
 export default class Avatar extends React.Component<Props> {
   render () {
     const { avatarStyle } = this.props
-    const circle = avatarStyle === AvatarStyle.Circle
+    const circle = avatarStyle === AvatarStyle.Transparent
     return (
       <svg
         style={this.props.style}

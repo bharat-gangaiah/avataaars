@@ -13,6 +13,7 @@ export interface Props {
     facialHairColor?: string;
     clotheType?: string;
     clotheColor?: string;
+    graphicType?: string;
     eyeType?: string;
     eyebrowType?: string;
     mouthType?: string;

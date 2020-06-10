@@ -28,7 +28,7 @@ var Avatar = /** @class */ (function (_super) {
     }
     Avatar.prototype.render = function () {
         var avatarStyle = this.props.avatarStyle;
-        var circle = avatarStyle === AvatarStyle.Circle;
+        var circle = avatarStyle === AvatarStyle.Transparent;
         return (React.createElement("svg", { style: this.props.style, width: '264px', height: '280px', viewBox: '0 0 264 280', version: '1.1', xmlns: 'http://www.w3.org/2000/svg', xmlnsXlink: 'http://www.w3.org/1999/xlink' },
             React.createElement("desc", null, "Created with getavataaars.com"),
             React.createElement("defs", null,
