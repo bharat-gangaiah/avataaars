@@ -9,19 +9,19 @@ var Selector_1 = require("./Selector");
 exports.Selector = Selector_1.default;
 exports.TopOption = new Option_1.default({
     key: 'topType',
-    label: 'Top',
+    label: 'Hair Style',
 });
 exports.AccessoriesOption = new Option_1.default({
     key: 'accessoriesType',
-    label: '↳ 👓 Accessories',
+    label: 'Accessories',
 });
 exports.HatColorOption = new Option_1.default({
     key: 'hatColor',
-    label: '🎨 HatColor',
+    label: 'Hat Color',
 });
 exports.HairColorOption = new Option_1.default({
     key: 'hairColor',
-    label: '↳ 💈 Hair Color',
+    label: 'Hair Color',
 });
 exports.FacialHairOption = new Option_1.default({
     key: 'facialHairType',
@@ -29,35 +29,35 @@ exports.FacialHairOption = new Option_1.default({
 });
 exports.FacialHairColor = new Option_1.default({
     key: 'facialHairColor',
-    label: '↳ ✂️ Facial Hair Color',
+    label: 'Facial Hair Color',
 });
 exports.ClotheOption = new Option_1.default({
     key: 'clotheType',
-    label: '👔 Clothes',
+    label: 'Clothes',
 });
 exports.ClotheColorOption = new Option_1.default({
     key: 'clotheColor',
-    label: '↳ Color Fabric',
+    label: 'Color Fabric',
 });
 exports.GraphicOption = new Option_1.default({
     key: 'graphicType',
-    label: '↳ Graphic',
+    label: 'Graphic',
 });
 exports.EyesOption = new Option_1.default({
     key: 'eyeType',
-    label: '👁 Eyes',
+    label: 'Eyes',
 });
 exports.EyebrowOption = new Option_1.default({
     key: 'eyebrowType',
-    label: '✏️ Eyebrow',
+    label: 'Eyebrow',
 });
 exports.MouthOption = new Option_1.default({
     key: 'mouthType',
-    label: '👄 Mouth',
+    label: 'Mouth',
 });
 exports.SkinOption = new Option_1.default({
     key: 'skinColor',
-    label: '🎨 Skin',
+    label: 'Skin',
 });
 exports.allOptions = [
     exports.TopOption,
