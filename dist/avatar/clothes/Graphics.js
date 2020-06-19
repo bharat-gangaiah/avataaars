@@ -1,11 +1,8 @@
 "use strict";
 var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    }
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
     return function (d, b) {
         extendStatics(d, b);
         function __() { this.constructor = d; }
@@ -210,24 +207,37 @@ var Bear = /** @class */ (function (_super) {
     return Bear;
 }(React.Component));
 exports.Bear = Bear;
+var OnePlus = /** @class */ (function (_super) {
+    __extends(OnePlus, _super);
+    function OnePlus() {
+        var _this = _super !== null && _super.apply(this, arguments) || this;
+        _this.mask1 = lodash_1.uniqueId('react-mask-');
+        _this.path1 = lodash_1.uniqueId('react-path-');
+        return _this;
+    }
+    OnePlus.prototype.render = function () {
+        var _a = this, mask1 = _a.mask1, path1 = _a.path1;
+        return (React.createElement("g", { id: 'Clothing/Graphic/OnePlus', mask: "url(#" + this.props.maskID + ")", strokeWidth: '1', fillRule: 'evenodd' },
+            React.createElement("defs", null,
+                React.createElement("polygon", { id: path1, points: '47.8916289 0.430054064 47.8916289 41.9204613 0.45345556 41.9204613 0.45345556 0.430054064 47.8916289 0.430054064' })),
+            React.createElement("g", { transform: 'translate(81.000000, 58.000000)', id: 'Group-77' },
+                React.createElement("g", { transform: 'translate(31.000000, 1.000000)' },
+                    React.createElement("mask", { id: mask1, fill: 'white' },
+                        React.createElement("use", { xlinkHref: '#' + path1 })),
+                    React.createElement("path", { d: 'M 12.738281 32.910156 L 12.738281 29.261719 L 16.386719 29.261719 L 16.386719 18.316406 L 12.738281 18.316406 L 12.738281 14.597656 L 20.035156 14.597656 L 20.035156 29.195312 L 23.753906 29.195312 L 23.753906 32.84375 L 12.738281 32.84375 Z M 36.492188 42 L 36.492188 18.246094 L 32.84375 18.246094 L 32.84375 38.351562 L 3.648438 38.351562 L 3.648438 9.15625 L 23.753906 9.15625 L 23.753906 5.507812 L 0 5.507812 L 0 42 Z M 36.492188 14.597656 L 36.492188 9.089844 L 42 9.089844 L 42 5.507812 L 36.492188 5.507812 L 36.492188 0 L 32.84375 0 L 32.84375 5.507812 L 27.335938 5.507812 L 27.335938 9.15625 L 32.84375 9.15625 L 32.84375 14.664062 L 36.492188 14.664062 Z M 36.492188 14.597656 ', id: 'Fill-77', fill: '#eb0028', mask: "url(#" + mask1 + ")" })))));
+    };
+    OnePlus.optionValue = 'OnePlus';
+    return OnePlus;
+}(React.Component));
+exports.OnePlus = OnePlus;
 var Graphics = /** @class */ (function (_super) {
     __extends(Graphics, _super);
     function Graphics() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Graphics.prototype.render = function () {
-        return (React.createElement(options_1.Selector, { option: options_1.GraphicOption, defaultOption: Skull },
-            React.createElement(Bat, { maskID: this.props.maskID }),
-            React.createElement(Cumbia, { maskID: this.props.maskID }),
-            React.createElement(Deer, { maskID: this.props.maskID }),
-            React.createElement(Diamond, { maskID: this.props.maskID }),
-            React.createElement(Hola, { maskID: this.props.maskID }),
-            React.createElement(Pizza, { maskID: this.props.maskID }),
-            React.createElement(Resist, { maskID: this.props.maskID }),
-            React.createElement(Selena, { maskID: this.props.maskID }),
-            React.createElement(Bear, { maskID: this.props.maskID }),
-            React.createElement(SkullOutline, { maskID: this.props.maskID }),
-            React.createElement(Skull, { maskID: this.props.maskID })));
+        return (React.createElement(options_1.Selector, { option: options_1.GraphicOption, defaultOption: OnePlus },
+            React.createElement(OnePlus, { maskID: this.props.maskID })));
     };
     return Graphics;
 }(React.Component));
